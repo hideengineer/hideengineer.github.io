@@ -15,15 +15,12 @@
     body {
       font-family: cursive;
       text-align: center;
+      background: url(img/img_portfolio/portfolio.jpg) center no-repeat;
+      background-size: cover
     }
 
     .fixed-top {
       width: 100%;
-    }
-
-    .container-fluid {
-      background: url(img/img_portfolio/portfolio.jpg) center no-repeat;
-      background-size: cover
     }
 
     .photo {
@@ -49,7 +46,6 @@
     .email {
       margin: 0 auto;
     }
-
   </style>
 </head>
 
@@ -66,7 +62,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active text-white" href="#Home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active text-white" href="#Home">Home <span
+                    class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link text-white" href="#Profile">Profile</a>
                 <a class="nav-item nav-link text-white" href="#Works">Works</a>
                 <a class="nav-item nav-link text-white" href="#Contact">Contact</a>
@@ -82,16 +79,18 @@
           Hide Morishita
         </p>
       </div>
-      <div class="row">
-        <div class="text-white" style="margin: auto;">
-          <h4 id="Profile" class="text-center">Profile</h4>
-          <div class="media mt-3 mb-5 text-center">
-            <img src="img/img_portfolio/IMG_3795.JPG" class="photo rounded-circle mx-3" alt="プロフィール写真">
-            <div class="media-body mx-3">
+      <div class="contener">
+        <div class="row">
+          <div class="text-white" style="margin: auto;">
+            <h4 id="Profile" class="text-center">Profile</h4>
+            <div class="media mt-3 mb-5 text-center col-6">
+              <img src="img/img_portfolio/IMG_3795.JPG" class="photo rounded-circle mx-3" alt="プロフィール写真">
+            </div>
+            <div class="media-body mx-3 col-6">
               <h5 class="mt-5 mb-3 text-left">名前 : 森下　薫</h5>
               <p class="text-left">TECH::EXPERT 名古屋校にてプログラミングを学習。</p>
               <p class="text-left">フリーランスエンジニアとして活動中。</p>
-              <div class="profile-box col-xs-12">
+              <div class="profile-box">
                 <!-- github -->
                 <a class="gh-ic mt-3 mb-5">
                   GitHub:
@@ -103,47 +102,48 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <table class="text-white bg-info" style="height: 100px; margin: 0 auto;">
-        <h4 class="text-white">skill</h4>
-        <tbody class="text-center">
-          <tr>
-            <td class="align-top">
-              <img src="img/img_portfolio/html-5.svg" class="mx-3" style="height: 100px; width: 100px;" alt="html">
-              <p class="text-center">HTML</p>
-            </td>
-            <td class="align-top">
-              <img src="img/img_portfolio/css-3.svg" class="mx-5" style="height: 100px; width: 100px;" alt="html">
-              <p class="text-center">CSS</p>
-            </td>
-            <td class="align-bottom">
-              <img src="img/img_portfolio/javascript.svg" class="mx-3" style="height: 80px; width: 80px;" alt="html">
-              <p class="text-center">JavaScript</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="align-bottom">
-              <img src="img/img_portfolio/ruby.svg" style="height: 80px; width: 80px;" alt="html">
-              <p class="text-center">Ruby</p>
-            </td>
-            <td class="align-text-top">
-              <img src="img/img_portfolio/rails.svg" style="height: 100px; width: 100px;" alt="html">
-              <p class="text-center">Ruby on Rails</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="align-text-bottom">
-              <img src="img/img_portfolio/mysql.svg" style="height: 100px; width: 100px;" alt="html">
-              <p class="text-center">MySQL</p>
-            </td>
-            <td class="align-text-bottom">
-              <img src="img/img_portfolio/aws.svg" style="height: 100px; width: 100px;" alt="html">
-              <p class="text-center">AWS</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+
+        <table class="text-white bg-info" style="height: 100px; margin: 0 auto;">
+          <h4 class="text-white">skill</h4>
+          <tbody class="text-center">
+            <tr>
+              <td class="align-top">
+                <img src="img/img_portfolio/html-5.svg" class="mx-3" style="height: 100px; width: 100px;" alt="html">
+                <p class="text-center">HTML</p>
+              </td>
+              <td class="align-top">
+                <img src="img/img_portfolio/css-3.svg" class="mx-5" style="height: 100px; width: 100px;" alt="html">
+                <p class="text-center">CSS</p>
+              </td>
+              <td class="align-bottom">
+                <img src="img/img_portfolio/javascript.svg" class="mx-3" style="height: 80px; width: 80px;" alt="html">
+                <p class="text-center">JavaScript</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-bottom">
+                <img src="img/img_portfolio/ruby.svg" style="height: 80px; width: 80px;" alt="html">
+                <p class="text-center">Ruby</p>
+              </td>
+              <td class="align-text-top">
+                <img src="img/img_portfolio/rails.svg" style="height: 100px; width: 100px;" alt="html">
+                <p class="text-center">Ruby on Rails</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-text-bottom">
+                <img src="img/img_portfolio/mysql.svg" style="height: 100px; width: 100px;" alt="html">
+                <p class="text-center">MySQL</p>
+              </td>
+              <td class="align-text-bottom">
+                <img src="img/img_portfolio/aws.svg" style="height: 100px; width: 100px;" alt="html">
+                <p class="text-center">AWS</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
 
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade pt-4 py-5 text-white"

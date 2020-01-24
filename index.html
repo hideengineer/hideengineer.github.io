@@ -16,21 +16,12 @@
       font-family: cursive;
       text-align: center;
       background: url(img/img_portfolio/portfolio.jpg) center no-repeat;
-      background-size: cover
-    }
-
-    .fixed-top {
-      width: 100%;
-    }
-
-    .photo {
-      width: 250px;
-      height: 250px;
+      background-size: cover;
     }
 
     .d-block {
-      width: 60%;
-      height: 60%;
+      width: 80%;
+      height: 80%;
       margin: 0 auto;
     }
 
@@ -39,18 +30,11 @@
       list-style: none;
     }
 
-    .lead {
-      height: 100%;
-    }
-
-    .email {
-      margin: 0 auto;
-    }
   </style>
 </head>
 
 <body>
-  <main role="main" class="w-auto">
+  <main role="main" class="w-auto" style="width: 100%;">
     <div class="container-fluid">
       <div class="row">
         <header>
@@ -71,31 +55,31 @@
             </div>
           </nav>
         </header>
-      </div>
 
-      <div class="my-5">
-        <h1 id="Home" class="display-4 text-info">PORTFOLIO</h1>
-        <p class="lead text-success">
-          Hide Morishita
-        </p>
-      </div>
-      <div class="contener">
-        <div class="row">
-          <div class="text-white" style="margin: auto;">
-            <h4 id="Profile" class="text-center">Profile</h4>
-            <div class="media mt-3 mb-5 text-center col-6">
-              <img src="img/img_portfolio/IMG_3795.JPG" class="photo rounded-circle mx-3" alt="プロフィール写真">
+        <div class="my-5 mx-auto col-lg-12">
+          <h1 id="Home" class="display-4 text-info">PORTFOLIO</h1>
+          <p class="lead text-success">
+            Hide Morishita
+          </p>
+        </div>
+
+        <div class="text-white col-lg-7 col-md-7 mx-auto">
+          <h4 id="Profile" class="mx-auto">Profile</h4>
+          <div class="row">
+            <div class="media mt-3 mb-3 text-center col-lg-6 col-md-6">
+              <img src="img/img_portfolio/IMG_3795.JPG" class="photo rounded-circle mx-auto img-fluid" alt="プロフィール写真"
+                style="height: 250px; width: 250px;">
             </div>
-            <div class="media-body mx-3 col-6">
-              <h5 class="mt-5 mb-3 text-left">名前 : 森下　薫</h5>
-              <p class="text-left">TECH::EXPERT 名古屋校にてプログラミングを学習。</p>
-              <p class="text-left">フリーランスエンジニアとして活動中。</p>
+
+            <div class="media-body mx-auto col-lg-7 col-md-7 col-sm-6 col-xs-6 text-left">
+              <h5 class="mt-5 mb-3">名前 : 森下　薫</h5>
+              <p>TECH::EXPERT 名古屋校にてプログラミングを学習。</p>
+              <p>フリーランスエンジニアとして活動中。</p>
               <div class="profile-box">
                 <!-- github -->
-                <a class="gh-ic mt-3 mb-5">
+                <a class="gh-ic mt-3 mb-5 mx-auto">
                   GitHub:
-                  <a href="https://github.com/hideengineer"
-                    class="fab fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></a>
+                  <a href="https://github.com/hideengineer" class="fab fab fa-github fa-lg white-text mb-5 fa-2x"></a>
                 </a>
                 <p></p>
               </div>
@@ -103,98 +87,110 @@
           </div>
         </div>
 
-
-        <table class="text-white bg-info" style="height: 100px; margin: 0 auto;">
-          <h4 class="text-white">skill</h4>
-          <tbody class="text-center">
-            <tr>
-              <td class="align-top">
-                <img src="img/img_portfolio/html-5.svg" class="mx-3" style="height: 100px; width: 100px;" alt="html">
-                <p class="text-center">HTML</p>
-              </td>
-              <td class="align-top">
-                <img src="img/img_portfolio/css-3.svg" class="mx-5" style="height: 100px; width: 100px;" alt="html">
-                <p class="text-center">CSS</p>
-              </td>
-              <td class="align-bottom">
-                <img src="img/img_portfolio/javascript.svg" class="mx-3" style="height: 80px; width: 80px;" alt="html">
-                <p class="text-center">JavaScript</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="align-bottom">
-                <img src="img/img_portfolio/ruby.svg" style="height: 80px; width: 80px;" alt="html">
-                <p class="text-center">Ruby</p>
-              </td>
-              <td class="align-text-top">
-                <img src="img/img_portfolio/rails.svg" style="height: 100px; width: 100px;" alt="html">
-                <p class="text-center">Ruby on Rails</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="align-text-bottom">
-                <img src="img/img_portfolio/mysql.svg" style="height: 100px; width: 100px;" alt="html">
-                <p class="text-center">MySQL</p>
-              </td>
-              <td class="align-text-bottom">
-                <img src="img/img_portfolio/aws.svg" style="height: 100px; width: 100px;" alt="html">
-                <p class="text-center">AWS</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade pt-4 py-5 text-white"
-        data-ride="carousel">
-        <h4 id="Works">Works</h4>
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="https://arcane-inlet-53713.herokuapp.com/">
-              <img src="img/img_portfolio/flash.jpg" class="d-block" alt="フラッシュ暗算">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://13.112.14.62/">
-              <img src="img/img_portfolio/chat-space.jpg" class="d-block" alt="chatspace">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="http://54.64.93.92/">
-              <img src="img/img_portfolio/freemarket.jpg" class="d-block" alt="free-market">
-            </a>
-          </div>
+        <div class="col-lg-6 col-md-6 bg-info mx-auto rounded-lg">
+          <table class="text-white" style="height: 100px; margin: 0 auto;">
+            <h4 class="text-white mx-auto">skill</h4>
+            <tbody class="text-center mx-auto">
+              <tr>
+                <td class="align-top">
+                  <img src="img/img_portfolio/html-5.svg" class="mx-2 img-fluid" style="height: 100px; width: 100px;"
+                    alt="html">
+                  <p class="text-center">HTML</p>
+                </td>
+                <td class="align-top">
+                  <img src="img/img_portfolio/css-3.svg" class="mx-2 img-fluid" style="height: 100px; width: 100px;"
+                    alt="html">
+                  <p class="text-center">CSS</p>
+                </td>
+                <td class="align-bottom">
+                  <img src="img/img_portfolio/javascript.svg" class="mx-2 img-fluid" style="height: 80px; width: 80px;"
+                    alt="html">
+                  <p class="text-center">JavaScript</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-bottom">
+                  <img src="img/img_portfolio/ruby.svg" class="mx-2 img-fluid" style="height: 80px; width: 80px;"
+                    alt="html">
+                  <p class="text-center">Ruby</p>
+                </td>
+                <td class="align-text-top">
+                  <img src="img/img_portfolio/rails.svg" class="mx-2 img-fluid" style="height: 100px; width: 100px;"
+                    alt="html">
+                  <p class="text-center">Ruby on Rails</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-text-bottom">
+                  <img src="img/img_portfolio/mysql.svg" class="mx-2 img-fluid" style="height: 100px; width: 100px;"
+                    alt="html">
+                  <p class="text-center">MySQL</p>
+                </td>
+                <td class="align-text-bottom">
+                  <img src="img/img_portfolio/aws.svg" class="mx-2 img-fluid" style="height: 100px; width: 100px;"
+                    alt="html">
+                  <p class="text-center">AWS</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
 
-      <h4 id="Contact" class="mt-5 mb-2 text-white">Contact</h4>
-      <div class="lead text-white">
-        ↓ ↓ ↓ ↓
-        <div class="contact row">
-          <div class="email mb-3">
-            email: soroban-h-8888@outlook.jp
+        <div id="carouselExampleIndicators" class="col-lg-12 carousel slide carousel-fade pt-4 py-5 text-white"
+          data-ride="carousel">
+          <h4 id="Works">Works</h4>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://arcane-inlet-53713.herokuapp.com/">
+                <img src="img/img_portfolio/flash.jpg" class="d-block img-fluid" alt="フラッシュ暗算">
+                <p class="text-white text-center">フラッシュ暗算アプリ</p>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://13.112.14.62/">
+                <img src="img/img_portfolio/chat-space.jpg" class="d-block img-fluid" alt="chatspace">
+                <p class="text-white text-center">チャットアプリ</p>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="http://54.64.93.92/">
+                <img src="img/img_portfolio/freemarket.jpg" class="d-block img-fluid" alt="free-market">
+                <p class="text-white text-center">フリマアプリ</p>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- Twitter -->
-        <div class="twitter py-3">
-          <a class="tw-ic">
-            <a href="https://twitter.com/HIDE_ENGINEER_"
-              class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">@HIDE_ENGINEER_</a>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
           </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <p class="text-secondary text-center">※フリマアプリをご利用になる際はお問い合わせください</p>
+        </div>
+
+        <div class="col-lg-12 mx-auto">
+          <h4 id="Contact" class="mt-5 mb-2 mx-auto text-white">Contact</h4>
+          <div class="lead text-white">
+            ↓ ↓ ↓ ↓
+            <div class="email mb-3">
+              email: soroban-h-8888@outlook.jp
+            </div>
+            <!-- Twitter -->
+            <div class="twitter mb-3">
+              <a class="tw-ic">
+                <a href="https://twitter.com/HIDE_ENGINEER_" class="fab fa-twitter fa-lg white-text fa-2x"
+                  style="font-size: 20px;">@HIDE_ENGINEER_</a>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -204,7 +200,6 @@
       <div class="footer-copyright text-center py-3 text-white">© 2019 Copyright:MDBootstrap.com
       </div>
       <!-- Copyright -->
-
     </footer>
   </main>
 
